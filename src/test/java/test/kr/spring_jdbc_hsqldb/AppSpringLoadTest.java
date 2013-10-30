@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 
 
-@ContextConfiguration({"/config/app-root.xml"})
+@ContextConfiguration({"/config/app-root-test.xml", "/config/app-datasource-test.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
 public class AppSpringLoadTest {
 	
