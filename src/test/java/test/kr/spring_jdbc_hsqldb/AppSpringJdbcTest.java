@@ -69,6 +69,12 @@ public class AppSpringJdbcTest {
 		
 		
 		System.out.println("count=" + SimpleJdbcTestUtils.countRowsInTable(simple, "Product2"));
+		
+		
+		//students select 
+		List<?> rs3 = new ArrayList<Object>();
+		rs3 = simple.queryForList("select * from students", args);
+		System.out.println(rs3);
 	}
 
 }
